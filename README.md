@@ -1,4 +1,4 @@
-# FULL_ADDER_SUBTRACTOR
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8f6ddd33-a543-4f3e-9db7-0080399ef45a" /># FULL_ADDER_SUBTRACTOR
 
 Implementation-of-Full-Adder-and-Full-subtractor-circuit
 
@@ -50,16 +50,28 @@ output Sum,Carry;
 assign Sum=A^B^Cin;
 assign Carry=((A^B)&Cin)|(A&B);
 endmodule 
+ FULL SUBTRACTOR 
+module DE4(a,b,Bin,BO,DIFF);
+input a,b,Bin;
+output BO,DIFF;
+assign DIFF = a ^ b ^ Bin;
+assign BO = (a & b) | ((a ^ b) & Bin);
+endmodule
+
 
 /* Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming. Developed by: RegisterNumber:
 */
 
 **RTL Schematic**
 FULL ADDER 
-<img width="1920" height="1080" alt="Screenshot (26)" src="https://github.com/user-attachments/assets/b163105e-8b1e-4300-bd93-2d9ce8a58f7d" />
+<img width="1920" height="1080" alt="Screenshot (25)" src="https://github.com/user-attachments/assets/6918ba8c-192a-4c62-885b-f8561fd14ce0" />
+
+<img width="1920" height="1080" alt="Screenshot (28)" src="https://github.com/user-attachments/assets/f889203a-fa39-48ec-99ba-db61985091ab" />
 
 **Output Timing Waveform**
 <img width="1920" height="1080" alt="Screenshot (27)" src="https://github.com/user-attachments/assets/993ed53a-a8c5-4f1a-8e1f-185e9b1678d9" />
+
+<img width="1920" height="1080" alt="Screenshot (29)" src="https://github.com/user-attachments/assets/671ba117-1aa7-44de-bd7b-3aeb527ffb47" />
 
 **Result:**
 
